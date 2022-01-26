@@ -1,0 +1,21 @@
+{
+  "name": "source-maps-not-working",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build2": "esbuild index.js --bundle --platform=node --sourcemap --outfile=dist/index.js",
+    "start": "node --enable-source-maps dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.9.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.14",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

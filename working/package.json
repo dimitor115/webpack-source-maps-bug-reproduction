@@ -1,0 +1,22 @@
+{
+  "name": "source-maps-working",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build2": "esbuild index.js --platform=node --sourcemap --outfile=dist/index.js",
+    "start": "node --enable-source-maps dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.14",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
